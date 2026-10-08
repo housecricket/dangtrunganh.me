@@ -1,0 +1,56 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/chuong/:path*",
+      "destination": "https://www.thelast10book.com/chuong/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en/:path*",
+      "destination": "https://www.thelast10book.com/en/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/es/:path*",
+      "destination": "https://www.thelast10book.com/es/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ja/:path*",
+      "destination": "https://www.thelast10book.com/ja/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh/:path*",
+      "destination": "https://www.thelast10book.com/zh/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/trich/:path*",
+      "destination": "https://www.thelast10book.com/trich/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/so-tay/:path*",
+      "destination": "https://www.thelast10book.com/so-tay/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pdf/:path*",
+      "destination": "https://www.thelast10book.com/pdf/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/covers/:path*",
+      "destination": "https://www.thelast10book.com/covers/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/illus/:path*",
+      "destination": "https://www.thelast10book.com/illus/:path*",
+      "permanent": true
+    }
+  ]
+}

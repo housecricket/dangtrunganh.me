@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dang Trung Anh</title>
+<meta name="description" content="Dang Trung Anh works on data and AI at Viettel, and writes The Last 10%, a management novel about the part of work that is still ours.">
+<link rel="canonical" href="https://dangtrunganh.me/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dang Trung Anh">
+<meta property="og:description" content="Data and AI by day. Writing The Last 10%, one chapter a week.">
+<meta property="og:url" content="https://dangtrunganh.me/">
+<meta property="og:image" content="https://dangtrunganh.me/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' fill='%23fff'/%3E%3Ccircle cx='5' cy='5' r='3.2' fill='%230b0b0b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+<!-- Google Analytics: dùng chung mã với trang sách -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FE2BPRQ831"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FE2BPRQ831');</script>
+<style>
+:root{--bg:#fff;--paper:#f4f4f2;--ink:#0b0b0b;--muted:#6b6b67;--line:#dededa;
+  --display:"Playfair Display",Georgia,serif;--serif:"Lora",Georgia,serif;--sans:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{color-scheme:light;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:66rem;margin:0 auto;padding:0 clamp(16px,5vw,48px)}
+
+/* Thanh trên cùng */
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:1.3rem;font:500 .78rem var(--sans);letter-spacing:.04em;color:var(--muted)}
+.top nav{display:flex;gap:1.4rem}
+.top a:hover{color:var(--ink)}
+
+/* Mở đầu */
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,6vw,80px);align-items:center;padding-block:clamp(48px,9vw,110px) clamp(48px,8vw,96px);border-top:1px solid var(--line)}
+.eyebrow{font:600 .7rem var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+h1{margin:.9rem 0 0;font:900 clamp(2.9rem,8vw,5.4rem)/.96 var(--display);letter-spacing:-.025em}
+h1 span{display:block;white-space:nowrap}
+.lede{margin:clamp(22px,3.5vw,34px) 0 0;max-width:31rem;font-size:clamp(1.15rem,2vw,1.36rem);line-height:1.6}
+.lede em{font-family:var(--display);font-style:italic;font-weight:700}
+.hero .btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.2rem;font:600 .86rem var(--sans);border:1px solid var(--ink);transition:background .15s,color .15s}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.dark:hover{background:#333}
+.btn:not(.dark):hover{background:var(--ink);color:#fff}
+
+/* Lưới 100 chấm: 90 của agent, 10 của con người. 10 chấm cuối lần lượt tô đen khi mở trang */
+.dotsbox{justify-self:end;width:100%;max-width:330px}
+.dots{display:grid;grid-template-columns:repeat(10,1fr);gap:clamp(6px,1vw,10px)}
+.dots i{display:block;aspect-ratio:1;border-radius:50%;background:#e9e9e5}
+.dots i.h{animation:fill .5s ease forwards}
+@keyframes fill{to{background:var(--ink);transform:scale(1.08)}}
+.dots-cap{display:flex;justify-content:space-between;margin-top:1rem;font:500 .78rem var(--sans);color:var(--muted)}
+.dots-cap b{color:var(--ink);font-weight:600}
+
+/* Dải tranh minh hoạ */
+.band{position:relative;margin:0}
+.band img{width:100%;aspect-ratio:21/8;object-fit:cover;object-position:50% 88%;filter:grayscale(1)}
+.band figcaption{position:absolute;left:0;right:0;bottom:0;padding:clamp(18px,4vw,40px) clamp(16px,5vw,48px);background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff}
+.band blockquote{margin:0 auto;max-width:66rem;font:700 italic clamp(1.3rem,3.2vw,2.3rem)/1.25 var(--display)}
+.band cite{display:block;max-width:66rem;margin:.6rem auto 0;font:500 .74rem var(--sans);font-style:normal;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+
+/* Các mục */
+.sec{padding-block:clamp(56px,9vw,104px)}
+.sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:clamp(24px,4vw,40px)}
+.sec-h h2{margin:.5rem 0 0;font:900 clamp(2rem,4.6vw,3rem)/1.02 var(--display);letter-spacing:-.01em}
+.sec-h a{font:500 .85rem var(--sans);border-bottom:1px solid var(--ink);white-space:nowrap}
+
+/* Cuốn sách */
+.book{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.book .cover{transform:rotate(-2deg);box-shadow:0 30px 50px -22px rgba(0,0,0,.55),0 6px 14px rgba(0,0,0,.12);transition:transform .3s}
+.book a:hover .cover{transform:rotate(0)}
+.book p{margin:0 0 1rem;font-size:1.12rem;line-height:1.75;max-width:34rem}
+.status{display:flex;align-items:center;gap:.6rem;margin:1.2rem 0 0!important;font:500 .82rem var(--sans)!important;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--ink);flex:none;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.25}}
+.langs{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.langs a{padding:.4rem .75rem;border:1px solid var(--line);font:500 .8rem var(--sans);transition:border-color .15s}
+.langs a:hover{border-color:var(--ink)}
+
+/* Ba chương đầu */
+.chs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.5vw,28px);margin-top:clamp(40px,6vw,64px)}
+.ch{display:flex;flex-direction:column}
+.ch .im{overflow:hidden;border:1px solid var(--line)}
+.ch img{width:100%;aspect-ratio:3/2;object-fit:cover;filter:grayscale(1);transition:transform .5s}
+.ch:hover img{transform:scale(1.04)}
+.ch .n{margin-top:1rem;font:600 .7rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.ch h3{margin:.35rem 0 .4rem;font:900 1.35rem/1.15 var(--display)}
+.ch:hover h3{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.15em}
+.ch q{font-size:.98rem;line-height:1.55;font-style:italic;quotes:"“" "”"}
+
+/* Mục công việc: nền đen */
+.dark-sec{background:var(--ink);color:#fff}
+.dark-sec .eyebrow{color:#a5a5a0}
+.work{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:center}
+.work p{margin:0 0 1.1rem;font-size:clamp(1.1rem,1.8vw,1.28rem);line-height:1.7;color:#e9e9e5}
+.work .lead{font:900 clamp(1.7rem,3.6vw,2.5rem)/1.15 var(--display);color:#fff;margin:.8rem 0 1.4rem}
+.work .btn{border-color:#fff;color:#fff;margin-top:.6rem}
+.work .btn:hover{background:#fff;color:var(--ink)}
+/* Hàng ghế: nhiều chỗ ngồi đã qua, chỗ sáng là hôm nay */
+.seats{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.6vw,18px)}
+.seat{aspect-ratio:1;border:1px solid #555;position:relative}
+.seat::after{content:"";position:absolute;left:22%;right:22%;bottom:18%;height:26%;border:1px solid #555;border-top:0}
+.seat.now{background:#fff;border-color:#fff}
+.seat.now::after{border-color:var(--ink)}
+.seats-cap{display:flex;justify-content:space-between;margin-top:1rem;font:500 .76rem var(--sans);color:#a5a5a0}
+.seats-cap b{color:#fff;font-weight:600}
+
+/* Kệ sách: gáy sách dựng đứng */
+.shelf{display:flex;align-items:flex-end;gap:8px;padding-left:4px;border-bottom:3px solid var(--ink);overflow-x:auto;scrollbar-width:none}
+.shelf::-webkit-scrollbar{display:none}
+.spine{flex:none;width:clamp(3.2rem,6vw,4.4rem);display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;transform:rotate(180deg);padding:1.2rem 0;font:900 clamp(1rem,1.6vw,1.25rem) var(--display);white-space:nowrap;border:1px solid var(--ink);transition:transform .2s}
+.spine small{font:500 .66rem var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-top:1rem;opacity:.7}
+.spine.d{background:var(--ink);color:#fff}
+.spine.bio{width:clamp(3.8rem,7vw,5.2rem);font-size:clamp(1.1rem,1.8vw,1.4rem)}
+.spine.bio:not(.d){background:#fff;box-shadow:inset 0 14px 0 -10px var(--ink),inset 0 -14px 0 -10px var(--ink)}
+.spine.bio.d{box-shadow:inset 0 14px 0 -10px #fff,inset 0 -14px 0 -10px #fff}
+.bookend{flex:none;width:clamp(14px,2vw,22px);height:150px;margin:0 clamp(8px,1.6vw,16px);background:var(--ink);clip-path:polygon(0 100%,0 0,35% 0,35% 70%,100% 70%,100% 100%)}
+.spine.g{background:var(--paper)}
+.spine:hover{transform:rotate(180deg) translateY(10px)}
+.spine.mine{margin-left:clamp(36px,7vw,100px);background:var(--ink);color:#fff;box-shadow:0 0 0 3px #fff,0 0 0 4px var(--ink);transform-origin:0 100%;transform:rotate(-7deg);margin-bottom:0}
+.spine.mine small{margin-top:0;margin-bottom:1rem;opacity:.8}
+.spine.mine:hover{transform:rotate(0)}
+.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem 2rem;margin-top:2rem}
+.notes div{font-size:.98rem;line-height:1.55}
+.notes b{display:block;font:600 .8rem var(--sans);margin-bottom:.25rem}
+
+footer{border-top:1px solid var(--line);padding-block:1.6rem 2.4rem;display:flex;justify-content:space-between;gap:1rem;font:400 .76rem var(--sans);color:var(--muted)}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr}
+  .dotsbox{justify-self:start;max-width:260px}
+  .book{grid-template-columns:1fr;gap:28px}
+  .book > a{width:9.5rem}
+  .shelf{zoom:.52;gap:6px}
+  .spine.mine{margin-left:30px}
+  .chs{grid-template-columns:1fr}
+  .ch{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:0 1rem;align-items:start}
+  .ch .im{grid-row:span 3}
+  .ch .n{margin-top:0}
+  .work{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr}
+  .band img{aspect-ratio:4/3}
+  .top nav a:not(:last-child){display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.dots i.h{background:var(--ink)}}
+</style>
+</head>
+<body>
+<header class="wrap top">
+  <span>dangtrunganh.me</span>
+  <nav><a href="#writing">Writing</a><a href="#work">Work</a><a href="#reading">Reading</a><a href="https://www.linkedin.com/in/dangtrunganh" target="_blank" rel="noopener me">LinkedIn ↗</a></nav>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <div>
+      <div class="eyebrow">Data · AI · Writing</div>
+      <h1><span>Dang</span> <span>Trung Anh</span></h1>
+      <p class="lede">I work on data and AI at Viettel. In the evenings I write <em>The Last 10%</em>, a novel about the part of work the machines still leave to us.</p>
+      <div class="btns">
+        <a class="btn dark" href="https://www.thelast10book.com/en/chapter/1/">Read Chapter 1 →</a>
+        <a class="btn" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7512726408108924930" target="_blank" rel="noopener">Get new chapters ↗</a>
+      </div>
+    </div>
+    <figure class="dotsbox" style="margin:0" aria-label="Ninety dots for the agents, ten for people">
+      <div class="dots" aria-hidden="true" id="dots"></div>
+      <figcaption class="dots-cap"><span>90 for the agents</span><b>10 for us</b></figcaption>
+    </figure>
+  </section>
+
+  <figure class="band">
+    <img src="img/riverbank.jpg" alt="Three people on the riverbank at five in the afternoon, an illustration from The Last 10%" width="1600" height="1067">
+    <figcaption>
+      <blockquote>“If it still hurts, you can still see the way.”</blockquote>
+      <cite>The Last 10% · Chapter 1</cite>
+    </figcaption>
+  </figure>
+
+  <section class="wrap sec" id="writing">
+    <div class="sec-h">
+      <div><div class="eyebrow">Writing</div><h2>The Last 10%</h2></div>
+      <a href="https://www.thelast10book.com/en/">Open the book →</a>
+    </div>
+    <div class="book">
+      <a href="https://www.thelast10book.com/en/" aria-label="The Last 10%"><img class="cover" src="cover.jpg" alt="Cover of The Last 10%" width="720" height="1080"></a>
+      <div>
+        <p>A management novel, published one chapter a week. At a company that rents out AI agents, twelve people handle what the agents can’t, and slowly start asking what that last ten percent really is.</p>
+        <p>Each chapter puts a story next to the research behind it, from Toyota’s kaizen to psychological safety, and ends with a few questions to take back to your own work.</p>
+        <p class="status"><i aria-hidden="true"></i>Now writing Chapter 10 · Japanese edition in progress</p>
+        <div class="langs">
+          <a href="https://a.co/d/0jbHvq34" target="_blank" rel="noopener">Amazon ↗</a>
+          <a href="https://www.thelast10book.com/" lang="vi">Tiếng Việt</a>
+          <a href="https://www.thelast10book.com/es/" lang="es">Español</a>
+          <a href="https://note.com/dangtrunganh/m/me3f2ade9009d" target="_blank" rel="noopener" lang="ja">日本語 ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chs">
+      <a class="ch" href="https://www.thelast10book.com/en/chapter/1/">
+        <div class="im"><img src="img/ch1.jpg" alt="The operations queue: the third report" loading="lazy" width="800" height="533"></div>
+        <div class="n">Chapter 1</div><h3>Where It Hurts</h3>
+        <q>Hardship sets the problem. It doesn’t solve it.</q>
+      </a>
+      <a class="ch" href="https://www.thelast10book.com/en/chapter/2/">
+        <div class="im"><img src="img/ch2.jpg" alt="The small clinic in an alley near the market" loading="lazy" width="800" height="533"></div>
+        <div class="n">Chapter 2</div><h3>The Immigrant</h3>
+        <q>Renting an agent doesn’t mean letting go.</q>
+      </a>
+      <a class="ch" href="https://www.thelast10book.com/en/chapter/3/">
+        <div class="im"><img src="img/ch3.jpg" alt="The first question" loading="lazy" width="800" height="533"></div>
+        <div class="n">Chapter 3</div><h3>Today, Like Yesterday</h3>
+        <q>Change before you are forced to change.</q>
+      </a>
+    </div>
+  </section>
+
+  <section class="dark-sec" id="work">
+    <div class="wrap sec work">
+      <div>
+        <div class="eyebrow">Work</div>
+        <p class="lead">Many seats, one company.</p>
+        <p>Over the years at Viettel I’ve sat in many different seats and worked across many parts of the business. Today my work is data and AI.</p>
+        <p>Changing seats taught me most of what I know about how people grow at work. It is also where most of what I write begins.</p>
+        <a class="btn" href="https://www.linkedin.com/in/dangtrunganh" target="_blank" rel="noopener me">Talk to me about AI and teams ↗</a>
+      </div>
+      <figure style="margin:0" aria-label="A row of seats: many in the past, one lit for today">
+        <div class="seats" aria-hidden="true">
+          <i class="seat"></i><i class="seat"></i><i class="seat"></i><i class="seat"></i><i class="seat"></i><i class="seat"></i>
+          <i class="seat"></i><i class="seat"></i><i class="seat"></i><i class="seat"></i><i class="seat"></i><i class="seat now"></i>
+        </div>
+        <figcaption class="seats-cap"><span>Many seats before</span><b>Data &amp; AI, today</b></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="reading">
+    <div class="sec-h">
+      <div><div class="eyebrow">Reading</div><h2>On my shelf</h2></div>
+    </div>
+    <div class="shelf" role="list" aria-label="Six books">
+      <div class="spine d" role="listitem" style="height:352px">Kaizen<small>Imai</small></div>
+      <div class="spine" role="listitem" style="height:400px">The Fearless Organization<small>Edmondson</small></div>
+      <div class="spine g" role="listitem" style="height:372px">Competing Against Luck<small>Christensen</small></div>
+      <div class="spine d" role="listitem" style="height:300px">The Difference<small>Page</small></div>
+      <div class="spine" role="listitem" style="height:330px">Good to Great<small>Collins</small></div>
+      <div class="spine g" role="listitem" style="height:318px">Radical Candor<small>Scott</small></div>
+      <i class="bookend" aria-hidden="true"></i>
+      <div class="spine bio" role="listitem" style="height:392px">Steve Jobs<small>Isaacson</small></div>
+      <div class="spine bio d" role="listitem" style="height:404px">Elon Musk<small>Isaacson</small></div>
+      <a class="spine mine" role="listitem" style="height:384px" href="https://www.thelast10book.com/en/" title="The one I'm writing"><small>Dang · in progress</small>The Last 10%</a>
+    </div>
+    <div class="notes">
+      <div><b>Kaizen · The Fearless Organization</b>Improvement starts with seeing the problem, and people only point at problems when it is safe to.</div>
+      <div><b>Competing Against Luck · The Difference</b>Customers hire products to get a job done. Teams solve it better when they see it in different ways.</div>
+      <div><b>Good to Great · Radical Candor</b>First who, then what. Then care personally and challenge directly.</div>
+      <div><b>Steve Jobs · Elon Musk</b>Walter Isaacson’s two biographies. Very different men, both obsessed with the last details that everyone else was ready to skip.</div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap"><span>© 2026 Dang Trung Anh</span><a href="https://www.thelast10book.com/en/">thelast10book.com</a></footer>
+
+<script>
+// 100 chấm, 10 chấm cuối lần lượt tô đen
+var d=document.getElementById('dots');for(var i=0;i<100;i++){var e=document.createElement('i');if(i>=90){e.className='h';e.style.animationDelay=(0.5+(i-90)*0.12)+'s'}d.appendChild(e)}
+</script>
+</body>
+</html>
